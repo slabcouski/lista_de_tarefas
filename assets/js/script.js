@@ -5,5 +5,6 @@ $(document).ready(function() {
         let newList = $('#new-task-list');
         let newItem = $('<li></li>').text(newList.val());
         $(newItem).appendTo('#new-task')
+        $(newList).val('');
     })
 })
