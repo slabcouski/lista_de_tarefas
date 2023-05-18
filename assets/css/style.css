@@ -37,6 +37,9 @@
     font-size: 1.5rem;
     list-style: none;
 }
+.block-list li{
+    display: flex;
+}
 .spring-list{
     display: flex;
     gap: 6rem;

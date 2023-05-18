@@ -3,8 +3,12 @@ $(document).ready(function() {
         e.preventDefault();
 
         let newList = $('#new-task-list');
-        let newItem = $('<li></li>').text(newList.val());
-        $(newItem).appendTo('#new-task')
+        let newItem = $('<input type="checkbox">');
+        let newCheck = $(`<li></li>`);
+        $(newItem).appendTo(newCheck);
+        $(`<p></p>`).text(newList.val()).appendTo(newCheck);
+        
+        $(newCheck).appendTo('#new-task');
         $(newList).val('');
     })
 })
