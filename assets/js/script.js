@@ -3,12 +3,16 @@ $(document).ready(function() {
         e.preventDefault();
 
         let newList = $('#new-task-list');
-        let newItem = $('<input type="checkbox">');
-        let newCheck = $(`<li></li>`);
-        $(newItem).appendTo(newCheck);
-        $(`<p></p>`).text(newList.val()).appendTo(newCheck);
-        
-        $(newCheck).appendTo('#new-task');
+        let newItem = $(`<li></li>`);
+        let newCheck = $('<input type="checkbox" id="check">');
+        $(newCheck).appendTo(newItem);
+        $(`<p id="task"></p>`).text(newList.val()).appendTo(newItem);
+        $(newItem).appendTo('#new-task');
+        newItem.after('<hr>');
         $(newList).val('');
-    })
-})
+        
+        $('#check').click(function() {
+            $('#task').toggleClass("done");
+        });
+    });
+});

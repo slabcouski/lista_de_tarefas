@@ -12,7 +12,7 @@
 }
 .wrap-left{
     width: 60rem;
-    height: 32rem;
+    height: 34rem;
     background-color: blue;
     display: flex;
 }
@@ -21,11 +21,11 @@
     align-items: end;
     justify-content: end;
     width: 12rem;
-    height: 34rem;
+    height: 36rem;
 }
 .block-list{
     width: 35rem;
-    height: 30.5rem;
+    height: 32.5rem;
     background-color: aliceblue;
     border-radius: 2rem;
     margin-top: 1.5rem;
@@ -39,6 +39,18 @@
 }
 .block-list li{
     display: flex;
+    margin: .5rem 0;
+}
+.block-list input{
+    width: 1.3rem;
+    margin-right: .5rem; 
+}
+.done{
+    text-decoration: line-through;
+}
+.block-list hr{
+    margin-left: -2rem ;
+    border: 1px solid #cecccc;
 }
 .spring-list{
     display: flex;
